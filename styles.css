@@ -1,0 +1,14 @@
+.main-nav {
+    text-transform: uppercase;
+    font-size: 15%;
+}
+
+a:hover {
+    color: blueviolet;
+    font-size: 150%; 
+    
+}
+
+a:link {
+    color: darkmagenta;
+}
