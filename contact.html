@@ -1,6 +1,7 @@
- <!doctype html>
+<!doctype html>
 
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
 
@@ -12,23 +13,30 @@
     body {
         background-color: whitesmoke;
     }
+
+    .contact-form {
+        position: absolute
+    }
 </style>
 
 <body>
 
-    <h1>Want more information?</h1>
-    <form method="get"> Join our newsletter!<input type="text" size="40" name="email" id="email" maxlength="40">
-        <br>
-        <textarea></textarea>
-        <br>
-        <input type="submit" value="Sign me up!"> <input type="reset">
-    </form>
-
+    <div class="contact-form">
+        <h1>Want more information?</h1>
+        <form method="get">
+            <label>First name: <input type="text" size="40" name="firstname" id="firstname" maxlength="40"> </label><b></b>
+            <label>Last name: <input type="text" size="40" name="lastname" id="lastname" maxlength="40"> </label><b></b>
+            <label>Email: <input type="text" size="40" name="email" id="email" maxlength="40"> </label><b></b>
+            <label for="comments">Comments</label> <br>
+            <textarea name="comments" id="comments" rows="4" cols="40"></textarea><br><br>
+            <input type="submit" value="Contact"> <input type="reset">
+        </form>
+    </div>
 
     <a href="index.html">Home</a>
     <a href="host2.html">Host Family</a>
     <a href="transportation.html">Getting Around</a>
 
 </body>
-    
+
 </html>
