@@ -4,6 +4,7 @@
 
 <head>
     <meta charset="utf-8">
+    <link type="text/css" rel="stylesheet" href="styles.css">
 
     <title> Contact </title>
 
@@ -14,28 +15,88 @@
         background-color: whitesmoke;
     }
 
-    .contact-form {
-        position: absolute
+    .div1 {
+        width: 920px;
+        height: 100px;
+        background-image: url(images/tvtower.JPG);
+        padding: 5px;
+    }
+
+    .contact-form {}
+
+    .inlineBlock {
+        display: inline-block;
     }
 </style>
 
-<body>
+<div class="div1">
 
+    <h1>Want more information?</h1>
+</div>
+
+<body>
+    <header>
+        <div>
+            <ul id="mainNav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="host2.html">Host Family</a></li>
+                <li><a href="transportation.html">Getting Around</a></li>
+            </ul>
+        </div>
+    </header>
+    <br>
     <div class="contact-form">
-        <h1>Want more information?</h1>
+        <br>
         <form method="get">
             <label>First name: <input type="text" size="40" name="firstname" id="firstname" maxlength="40"> </label><b></b>
+
             <label>Last name: <input type="text" size="40" name="lastname" id="lastname" maxlength="40"> </label><b></b>
+
             <label>Email: <input type="text" size="40" name="email" id="email" maxlength="40"> </label><b></b>
-            <label for="comments">Comments</label> <br>
+
+
+            <fieldset>
+                <legend>How many GER classes have you taken?</legend>
+                <input type="radio" name="numberclasses" value="none">None<br>
+                <input type="radio" name="numberclasses" value="one">One<br>
+                <input type="radio" name="numberclasses" value="two">Two or more<br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Which GER classes have you taken?</legend>
+
+                <input type="checkbox" class="inlineBlock" name="GERclasses" value="GER101">German 101, Elementary<br><br>
+                <input type="checkbox" class="inlineBlock" name="GERclasses" value="GER102">German 102, Elementary<br><br>
+                <input type="checkbox" class="inlineBlock" name="GERclasses" value="GER221">German 221, Conversational<br><br>
+
+
+            </fieldset>
+
+            <select name="major">
+           <option value="selectOne">Major</option>
+                <option value="art">Art</option>
+            <option value="commMedia">Comm/Media</option></select>
+
+            <select name="year">
+           <option value="year">Year</option>
+                <option value="freshman">Freshman</option>
+            <option value="sophmore">Sophmore</option>
+            <option value="junior">Junior</option>
+                <option value="senior">Senior</option>
+            </select>
+
+            <label for="comments">Comments (optional):</label> <br>
             <textarea name="comments" id="comments" rows="4" cols="40"></textarea><br><br>
-            <input type="submit" value="Contact"> <input type="reset">
+
+            <input type="submit" value="Submit Form"><input type="reset">
+
+            <label for="myPassword"> Password:</label>
+            <input type="password" name="myPassword">
+
         </form>
     </div>
 
-    <a href="index.html">Home</a>
-    <a href="host2.html">Host Family</a>
-    <a href="transportation.html">Getting Around</a>
+
 
 </body>
 

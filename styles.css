@@ -12,3 +12,13 @@ a:hover {
 a:link {
     color: darkmagenta;
 }
+
+.group:after {
+  		content: "";
+		display: table;
+		clear: both;
+	}
+
+#mainNav {
+    list-style: none;
+}
